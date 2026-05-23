@@ -1,18 +1,95 @@
-## Getting Started
+# ARKANOID
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A Java brick-breaker game with a neon cyberpunk aesthetic built with AWT/Swing.
 
-## Folder Structure
+![Java](https://img.shields.io/badge/Java-8+-orange) ![Version](https://img.shields.io/badge/version-1.1.0-cyan) ![License](https://img.shields.io/badge/license-MIT-green)
 
-The workspace contains two folders by default, where:
+---
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Download
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+**[→ Download v1.1.0](https://github.com/ayushvaish234/arkanoid/releases/tag/v1.1)**
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+---
 
-## Dependency Management
+## Gameplay
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Break all the bricks to complete a level. Miss the ball and it's game over.
+
+- Move the paddle with the **← →** arrow keys
+- Ball bounces off walls, the paddle, and bricks
+- Each brick hit scores **5 points**
+- Clear all bricks to advance to the next level
+- 6 levels total — grids get larger and denser as you progress
+
+---
+
+## Levels
+
+| Level | Grid | Bricks |
+|-------|------|--------|
+| 1 | 5 × 3 | 15 |
+| 2 | 5 × 6 | 30 |
+| 3 | 6 × 3 | 18 |
+| 4 | 5 × 4 | 20 |
+| 5 | 7 × 3 | 21 |
+| 6 | 6 × 8 | 48 |
+
+---
+
+## Running the Game
+
+**Requirements:** Java 8 or higher, no external dependencies.
+
+```bash
+# Clone the repo
+git clone https://github.com/ayushvaish234/arkanoid.git
+cd arkanoid
+
+# Compile
+javac -d out src/mypackage/*.java
+
+# Run
+java -cp out mypackage.MainClass
+```
+
+Or just grab the `.jar` from the [latest release](https://github.com/ayushvaish234/arkanoid/releases/tag/v1.1) and double-click it.
+
+---
+
+## Project Structure
+
+```
+arkanoid/
+├── src/mypackage/
+│   ├── MainClass.java       — entry point, JFrame setup
+│   ├── GamePlay.java        — game loop, input, rendering
+│   └── MapGenerator.java    — brick grid, drawing, collision data
+└── README.md
+```
+
+---
+
+## Controls
+
+| Key | Action |
+|-----|--------|
+| `←` | Move paddle left |
+| `→` | Move paddle right |
+| `Enter` | Start next level / restart after game over |
+
+---
+
+## Known Issues
+
+- No sound effects
+- Leaderboard button is non-functional
+- Ball speed is constant across all levels
+- Mouse control not supported during gameplay
+
+---
+
+## Changelog
+
+- [v1.1.0](https://github.com/ayushvaish234/arkanoid/releases/tag/v1.1) — Neon cyberpunk visual overhaul, performance improvements
+- v1.0.0 — Initial release
