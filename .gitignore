@@ -1,0 +1,15 @@
+# IDEs
+.idea/
+.vscode/
+
+# Build folders
+out/
+bin/
+build/
+target/
+
+# Compiled class files
+*.class
+
+# macOS system junk
+.DS_Store
