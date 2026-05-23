@@ -92,4 +92,4 @@ arkanoid/
 ## Changelog
 
 - [v1.1.0](https://github.com/ayushvaish234/arkanoid/releases/tag/v1.1) — Neon cyberpunk visual overhaul, performance improvements
-- v1.0.0 — Initial release
+- [v1.0.0](https://github.com/ayushvaish234/arkanoid/releases/tag/v1) — Initial release
